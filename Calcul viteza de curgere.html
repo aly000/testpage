@@ -1,0 +1,137 @@
+<html>
+<form action="file:///C:/Users/Alin%20Fuciu/Desktop/Prog. web/In lucru/1.htm">
+    <input type="submit" value="Spre un calculator" />
+</form> 
+
+<head>
+<title>Calcul viteza curgere</title>
+</head>
+
+<body style="background:url(flow.jpg);background-repeat:no-repeat;background-size:100% 100%;
+height:000px;background-attachment:fixed">
+       
+</body>
+<body>
+<h2 style="text-align:center;color:blue">Calcul viteza de curgere fluid</h2>
+</body>
+
+<script>
+var A = parseFloat(A);
+var B = parseFloat(B);
+var C = parseFloat(C);
+var D = parsefloat(D);
+        function calc(form) {
+var D = "0";
+var A = document.getElementById("num1").value;
+var B = document.getElementById("num2").value;
+var C = document.getElementById("num3").value;
+{
+D = (((4*A)/(3.14*B*B))/3600)/C;
+}
+    document.getElementById("demo").innerHTML = D;
+}
+</script>
+
+<script>
+        function calc1(form) {
+            document.getElementById("map_img").style.display = "";
+            document.getElementById("map_img1").style.display = "";
+            document.getElementById("map_img2").style.display = "";
+        }
+</script>
+
+<body>
+
+<br><b style="margin-left:2.72cm;color:green">Debit volumic <input type="text" id="num1" value=""> m<sup>3</sup>/h
+<br> 
+<br><b style="margin-left:1cm">Diametru interior teava <input type="text" id="num2" value=""> m 
+<br>
+<br><b style="margin-left:3.18cm">Numar tevi <input type="text" id="num3" value=""> 
+
+<br><b style="margin-left:5.2cm"><input type="button" value="Viteza de curgere" onClick="calc(); calc1()"> m/s 
+
+<br><b style="margin-left:5.2cm"><input type="button" value="Opriti aplauzele" onClick="calc2()"> 
+
+<p id="demo"></p>
+
+</body>
+
+<body>
+
+    <b style="margin-left:7cm"><img id="map_img" src="map.png" style="display: none;" width="200" height="200"/>
+
+    <b style="margin-left:2cm"><img id="map_img1" src="map.png" style="display: none;" width="200" height="200"/>
+
+    <b style="margin-left:2cm"><img id="map_img2" src="map.png" style="display: none;" width="200" height="200"/>
+
+</body>
+
+<script>
+        function calc2(form) {
+            document.getElementById("map_img").style.display = "none";
+            document.getElementById("map_img1").style.display = "none";
+            document.getElementById("map_img2").style.display = "none";
+        }
+</script>
+
+
+</body>
+<body>
+<h2 style="text-align:center;color:blue">Calcul numarul lu' Reynolds</h2>
+</body>
+
+<body>
+
+<br><b style="margin-left:2cm;color:green">Diametru hidraulic<input type="text" id="num4" value=""> m
+<br>
+<br><b style="margin-left:1.28cm;color:green">Vascozitate cinematica<input type="text" id="num5" value=""> m<sup>2</sup>/s
+
+
+<br><b style="margin-left:5.2cm"><input type="button" value="Numarul lu' Reynolds" onClick="calc3(); calc4()">
+
+
+<p id="demo1"></p>
+</body>
+
+<body>
+
+    <b style="margin-left:2cm"><img id="map_img3" src="curgere laminara.jpg" style="display: none;" width="300" height="120"/>
+
+    <b style="margin-left:0cm"><img id="map_img4" src="curgere turbulenta.jpg" style="display: none;" width="300" height="120"/>
+
+
+</body>
+
+<script>
+        function calc3(form) {
+
+var E = document.getElementById("num4").value;
+var F = document.getElementById("num5").value;
+var D = document.getElementById("demo").innerHTML
+{
+H = (D*E)/F;
+}
+    document.getElementById("demo1").innerHTML = H;
+}
+
+</script>
+
+<script>
+ 
+var H;
+        function calc4(form) {
+    
+    if (H <=4000) {
+            document.getElementById("map_img3").style.display = "";
+            document.getElementById("map_img4").style.display = "none";
+        
+            }
+    else    {
+            document.getElementById("map_img3").style.display = "none";
+            document.getElementById("map_img4").style.display = "";
+            
+}
+}
+
+</script>
+</html>
